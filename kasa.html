@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Check-out!</title> 
+</head>
+<style>
+    @keyframes C {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+    }
+    @keyframes baloons {
+    0%   {left: 0px;top: 50%;}
+    25%  {left: 0px;top: 0%;animation-timing-function: step-start}
+    49% {left: 0px;top: 80%;}
+    50%  {left: 0px;top: 80%;}
+    100% {left: 0px;top: 50%;}
+    }
+    @keyframes TF {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+    }
+    #C{
+        color:rgb(0, 115, 255);
+        animation-name: C;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    #TF{
+        color: rgb(0, 115, 255);
+        text-align: center;
+        animation-name: TF;
+        animation-duration: 10s;
+    }
+    #baloons{
+        animation-timing-function: linear;
+        position: absolute;
+        width: 10%;
+        height:auto;
+        animation-name: baloons;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    #AH{
+        color: rgb(0, 115, 255);
+        text-align: center;
+    }
+    h1 {
+        font-size: 75px;
+    }
+    #Shop-Check-Out{
+        color: rgb(0, 115, 255);
+        text-align: center;
+
+    }
+    html{
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+</style>
+<body>
+    <h1 id= "Shop-Check-Out">Kasa</h1>
+    <h2 id= "AH">Total price: 0 h.</h2>
+    <img id="TA" width=240 height=120 src="./images/TA.png">
+    <p id ="L">Lemon - 10 h.</p>
+    <p id ="A">Apple - 5 h.</p>
+    <p id ="B">Bread - 19 h.</p>
+    <p id ="C">Cake - 100 h.</p>
+    <p id ="Products">Your products:</p>
+
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="./kasa.js">
+    </script>
+</body>
