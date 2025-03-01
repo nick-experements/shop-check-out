@@ -1,0 +1,59 @@
+@keyframes C {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+    }
+    @keyframes baloons {
+    0%   {top: 100%;transform: translate(0, 0);}
+    100% {top: 0%;transform: translate(100%, -100%)}
+    }
+    @keyframes TF {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+    }
+    #C{
+        color:rgb(0, 115, 255);
+        animation-name: C;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    #TA{
+        position: absolute;
+        right: 10%;
+        bottom: 10%;
+    }
+    #TF{
+        color: rgb(0, 115, 255);
+        text-align: center;
+        animation-name: TF;
+        animation-duration: 10s;
+    }
+    #baloons{
+        left: 0px;
+        animation-timing-function: linear;
+        position: absolute;
+        width: 10%;
+        height:auto;
+        animation-name: baloons;
+        animation-delay: -2.5s;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    #AH{
+        color: rgb(0, 115, 255);
+        text-align: center;
+    }
+    h1 {
+        font-size: 75px;
+    }
+    #Shop-Check-Out{
+        color: rgb(0, 115, 255);
+        text-align: center;
+
+    }
+    html{
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
