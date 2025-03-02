@@ -5,7 +5,7 @@ var products = {
     'Cake': 100,
 }
 
-var H;
+var cashVolum;
 var totalPrice = 0;
 $('#product-option-lemon').click(()=>{
     $('body').append('<p>'+'Lemon'+'</p>')
@@ -28,9 +28,9 @@ $('#product-option-cake').click(()=>{
     $('#total-price').text('Total price: ' + totalPrice)
 })
 $('#complete').click(()=>{
-H = prompt('Total price: ' + totalPrice + ". How many you give me?\nExample: '40', '20, '50'")
-var surrender = H-totalPrice
-if (H >= totalPrice) {
+cashVolum = prompt('Total price: ' + totalPrice + ". How many you give me?\nExample: '40', '20, '50'")
+var surrender = cashVolum-totalPrice
+if (cashVolum >= totalPrice) {
     alert('Your rest is: ' + surrender)
     $('body > *').remove()
     $('body').append('<h1 id= "TF">'+"Thank's for buying our products"+'</h1>')
