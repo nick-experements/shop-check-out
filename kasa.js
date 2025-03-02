@@ -37,6 +37,5 @@ $('#complete').click(()=>{
         $('body').append('<img id = "baloons" src = "./images/baloons.png">')
     } else{
         alert('Not enough money')
-
     }
 })
