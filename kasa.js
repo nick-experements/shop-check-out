@@ -7,25 +7,22 @@ const products = {
 
 let cashVolum;
 let totalPrice = 0;
-$('#product-option-lemon').click(()=>{
-    $('#cart-items').append('<li>'+'Lemon'+'</li>')
-    totalPrice = totalPrice + products['Lemon']
+function addProductToCart(articul, title){
+    $('#cart-items').append('<li>'+title+'</li>')
+    totalPrice = totalPrice + products[articul]
     $('#total-price').text('Total price: ' + totalPrice)
+}
+$('#product-option-lemon').click(()=>{
+    addProductToCart('Lemon', 'Lemon')
 })
 $('#product-option-apple').click(()=>{
-    $('#cart-items').append('<li>'+'Apple'+'</li>')
-    totalPrice = totalPrice + products['Apple']
-    $('#total-price').text('Total price: ' + totalPrice)
+    addProductToCart('Apple', 'Apple')
 })
 $('#product-option-bread').click(()=>{
-    $('#cart-items').append('<li>'+'Bread'+'</li>')
-    totalPrice = totalPrice + products['Bread']
-    $('#total-price').text('Total price: ' + totalPrice)
+    addProductToCart('Bread', 'Bread')
 })
 $('#product-option-cake').click(()=>{
-    $('#cart-items').append('<li>'+'Cake'+'</li>')
-    totalPrice = totalPrice + products['Cake']
-    $('#total-price').text('Total price: ' + totalPrice)
+    addProductToCart('Cake', 'Cake')
 })
 $('#complete').click(()=>{
     cashVolum = prompt('Total price: ' + totalPrice + ". How many you give me?\nExample: '40', '20, '50'")
