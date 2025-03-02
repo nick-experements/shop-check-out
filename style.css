@@ -8,7 +8,7 @@
     0%   {top: 100%;transform: translate(0, 0);}
     100% {top: 0%;transform: translate(100%, -100%)}
     }
-    @keyframes TF {
+    @keyframes thanks {
     0%   {color: red;}
     25%  {color: yellow;}
     50%  {color: blue;}
@@ -25,10 +25,10 @@
         right: 10%;
         bottom: 10%;
     }
-    #TF{
+    #thanks{
         color: rgb(0, 115, 255);
         text-align: center;
-        animation-name: TF;
+        animation-name: thanks;
         animation-duration: 10s;
     }
     #baloons{

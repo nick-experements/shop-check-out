@@ -33,7 +33,7 @@ $('#complete').click(()=>{
     if (cashVolum >= totalPrice) {
         alert('Your rest is: ' + rest)
         $('body > *').remove()
-        $('body').append('<h1 id= "TF">'+"Thank's for buying our products"+'</h1>')
+        $('body').append('<h1 id= "thanks">'+"Thank's for buying our products"+'</h1>')
         $('body').append('<img id = "baloons" src = "./images/baloons.png">')
     } else{
         alert('Not enough money')
