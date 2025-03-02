@@ -1,12 +1,12 @@
-var products = {
+const products = {
     'Lemon': 10,
     'Apple': 5,
     'Bread': 19,
     'Cake': 100,
 }
 
-var cashVolum;
-var totalPrice = 0;
+let cashVolum;
+let totalPrice = 0;
 $('#product-option-lemon').click(()=>{
     $('body').append('<p>'+'Lemon'+'</p>')
     totalPrice = totalPrice + products['Lemon']
