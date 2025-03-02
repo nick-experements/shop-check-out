@@ -8,22 +8,22 @@ const products = {
 let cashVolum;
 let totalPrice = 0;
 $('#product-option-lemon').click(()=>{
-    $('body').append('<p>'+'Lemon'+'</p>')
+    $('#cart-items').append('<li>'+'Lemon'+'</li>')
     totalPrice = totalPrice + products['Lemon']
     $('#total-price').text('Total price: ' + totalPrice)
 })
 $('#product-option-apple').click(()=>{
-    $('body').append('<p>'+'Apple'+'</p>')
+    $('#cart-items').append('<li>'+'Apple'+'</li>')
     totalPrice = totalPrice + products['Apple']
     $('#total-price').text('Total price: ' + totalPrice)
 })
 $('#product-option-bread').click(()=>{
-    $('body').append('<p>'+'Bread'+'</p>')
+    $('#cart-items').append('<li>'+'Bread'+'</li>')
     totalPrice = totalPrice + products['Bread']
     $('#total-price').text('Total price: ' + totalPrice)
 })
 $('#product-option-cake').click(()=>{
-    $('body').append('<p>'+'Cake'+'</p>')
+    $('#cart-items').append('<li>'+'Cake'+'</li>')
     totalPrice = totalPrice + products['Cake']
     $('#total-price').text('Total price: ' + totalPrice)
 })

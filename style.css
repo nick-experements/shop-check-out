@@ -6,6 +6,10 @@ h1 {
     font-size: 75px;
 }
 
+#cart-items {
+    list-style: decimal;
+}
+
 #product-option-cake{
     color:rgb(0, 115, 255);
     animation-name: product-option-cake;
