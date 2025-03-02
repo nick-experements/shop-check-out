@@ -28,15 +28,15 @@ $('#product-option-cake').click(()=>{
     $('#total-price').text('Total price: ' + totalPrice)
 })
 $('#complete').click(()=>{
-cashVolum = prompt('Total price: ' + totalPrice + ". How many you give me?\nExample: '40', '20, '50'")
-var surrender = cashVolum-totalPrice
-if (cashVolum >= totalPrice) {
-    alert('Your rest is: ' + surrender)
-    $('body > *').remove()
-    $('body').append('<h1 id= "TF">'+"Thank's for buying our products"+'</h1>')
-    $('body').append('<img id = "baloons" src = "./images/baloons.png">')
-} else{
-    alert('Not enough money')
+    cashVolum = prompt('Total price: ' + totalPrice + ". How many you give me?\nExample: '40', '20, '50'")
+    const rest = cashVolum-totalPrice
+    if (cashVolum >= totalPrice) {
+        alert('Your rest is: ' + rest)
+        $('body > *').remove()
+        $('body').append('<h1 id= "TF">'+"Thank's for buying our products"+'</h1>')
+        $('body').append('<img id = "baloons" src = "./images/baloons.png">')
+    } else{
+        alert('Not enough money')
 
-}
+    }
 })
