@@ -7,22 +7,22 @@ var products = {
 
 var H;
 var totalPrice = 0;
-$('#L').click(()=>{
+$('#product-option-lemon').click(()=>{
     $('body').append('<p>'+'Lemon'+'</p>')
     totalPrice = totalPrice + products['Lemon']
     $('#total-price').text('Total price: ' + totalPrice)
 })
-$('#A').click(()=>{
+$('#product-option-apple').click(()=>{
     $('body').append('<p>'+'Apple'+'</p>')
     totalPrice = totalPrice + products['Apple']
     $('#total-price').text('Total price: ' + totalPrice)
 })
-$('#B').click(()=>{
+$('#product-option-bread').click(()=>{
     $('body').append('<p>'+'Bread'+'</p>')
     totalPrice = totalPrice + products['Bread']
     $('#total-price').text('Total price: ' + totalPrice)
 })
-$('#C').click(()=>{
+$('#product-option-cake').click(()=>{
     $('body').append('<p>'+'Cake'+'</p>')
     totalPrice = totalPrice + products['Cake']
     $('#total-price').text('Total price: ' + totalPrice)
