@@ -1,59 +1,99 @@
-@keyframes product-option-cake {
-    0%   {color: red;}
-    25%  {color: yellow;}
-    50%  {color: blue;}
-    100% {color: green;}
-    }
-    @keyframes baloons {
-    0%   {top: 100%;transform: translate(0, 0);}
-    100% {top: 0%;transform: translate(100%, -100%)}
-    }
-    @keyframes thanks {
-    0%   {color: red;}
-    25%  {color: yellow;}
-    50%  {color: blue;}
-    100% {color: green;}
-    }
-    #product-option-cake{
-        color:rgb(0, 115, 255);
-        animation-name: product-option-cake;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-    }
-    #complete{
-        position: absolute;
-        right: 10%;
-        bottom: 10%;
-    }
-    #thanks{
-        color: rgb(0, 115, 255);
-        text-align: center;
-        animation-name: thanks;
-        animation-duration: 10s;
-    }
-    #baloons{
-        left: 0px;
-        animation-timing-function: linear;
-        position: absolute;
-        width: 10%;
-        height:auto;
-        animation-name: baloons;
-        animation-delay: -2.5s;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-    }
-    #total-price{
-        color: rgb(0, 115, 255);
-        text-align: center;
-    }
-    h1 {
-        font-size: 75px;
-    }
-    #shop-check-out{
-        color: rgb(0, 115, 255);
-        text-align: center;
+html{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
 
+h1 {
+    font-size: 75px;
+}
+
+#product-option-cake{
+    color:rgb(0, 115, 255);
+    animation-name: product-option-cake;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#complete{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+#thanks{
+    color: rgb(0, 115, 255);
+    text-align: center;
+    animation-name: thanks;
+    animation-duration: 10s;
+}
+
+#baloons{
+    left: 0px;
+    animation-timing-function: linear;
+    position: absolute;
+    width: 10%;
+    height:auto;
+    animation-name: baloons;
+    animation-delay: -2.5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#total-price{
+    color: rgb(0, 115, 255);
+    text-align: center;
+}
+
+#shop-check-out{
+    color: rgb(0, 115, 255);
+    text-align: center;
+
+}
+
+@keyframes product-option-cake {
+    0%   {
+        color: red;
     }
-    html{
-        font-family: "Lucida Console", "Courier New", monospace;
+
+    25%  {
+        color: yellow;
     }
+
+    50%  {
+        color: blue;
+    }
+
+    100% {
+        color: green;
+    }
+}
+
+@keyframes baloons {
+    0%   {
+        top: 100%;
+        transform: translate(0, 0);
+    }
+
+    100% {
+        top: 0%;
+        transform: translate(100%, -100%)
+    }
+}
+
+@keyframes thanks {
+    0%   {
+        color: red;
+    }
+
+    25%  {
+        color: yellow;
+    }
+
+    50%  {
+        color: blue;
+    }
+
+    100% {
+        color: green;
+    }
+}
+
