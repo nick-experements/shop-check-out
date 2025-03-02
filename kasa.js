@@ -27,7 +27,7 @@ $('#C').click(()=>{
     totalPrice = totalPrice + products['Cake']
     $('#total-price').text('Total price: ' + totalPrice)
 })
-$('#TA').click(()=>{
+$('#complete').click(()=>{
 H = prompt('Total price: ' + totalPrice + ". How many you give me?\nExample: '40', '20, '50'")
 var surrender = H-totalPrice
 if (H >= totalPrice) {
