@@ -6,31 +6,31 @@ var products = {
 }
 
 var H;
-var AH = 0;
+var totalPrice = 0;
 $('#L').click(()=>{
     $('body').append('<p>'+'Lemon'+'</p>')
-    AH = AH + products['Lemon']
-    $('#AH').text('Total price: ' + AH)
+    totalPrice = totalPrice + products['Lemon']
+    $('#total-price').text('Total price: ' + totalPrice)
 })
 $('#A').click(()=>{
     $('body').append('<p>'+'Apple'+'</p>')
-    AH = AH + products['Apple']
-    $('#AH').text('Total price: ' + AH)
+    totalPrice = totalPrice + products['Apple']
+    $('#total-price').text('Total price: ' + totalPrice)
 })
 $('#B').click(()=>{
     $('body').append('<p>'+'Bread'+'</p>')
-    AH = AH + products['Bread']
-    $('#AH').text('Total price: ' + AH)
+    totalPrice = totalPrice + products['Bread']
+    $('#total-price').text('Total price: ' + totalPrice)
 })
 $('#C').click(()=>{
     $('body').append('<p>'+'Cake'+'</p>')
-    AH = AH + products['Cake']
-    $('#AH').text('Total price: ' + AH)
+    totalPrice = totalPrice + products['Cake']
+    $('#total-price').text('Total price: ' + totalPrice)
 })
 $('#TA').click(()=>{
-H = prompt('Total price: ' + AH + ". How many you give me?\nExample: '40', '20, '50'")
-var surrender = H-AH
-if (H >= AH) {
+H = prompt('Total price: ' + totalPrice + ". How many you give me?\nExample: '40', '20, '50'")
+var surrender = H-totalPrice
+if (H >= totalPrice) {
     alert('Your rest is: ' + surrender)
     $('body > *').remove()
     $('body').append('<h1 id= "TF">'+"Thank's for buying our products"+'</h1>')
